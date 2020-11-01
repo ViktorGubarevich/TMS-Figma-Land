@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             background: #FFFFFF;
-            border: 1px solid #E8E8E8;
+            border: 1px solid #E8E8E8; 
             box-sizing: border-box;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
@@ -191,6 +191,14 @@
                     
                     img {
                         width: 235px;
+
+                        @include screen-max($hd) {
+                            width: 100%;
+                        }
+                    }
+
+                    @include screen-max($hd) {
+                        width: 100%;
                     }
                 }
 
