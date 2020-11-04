@@ -351,3 +351,10 @@ MigrationBackup/
 
 # Without node_modules/
 node_modules/
+
+# Without app, git, thumbs, ds_store, package-lock 
+/.git/
+/**/Thumbs.db
+/**/*.DS_Store
+/**/package-lock.json
+app/
